@@ -1,0 +1,776 @@
+
+/*fonts*/
+@font-face {
+  font-family: 'Poppins'; /* Choose a name for your custom font */
+  src: url('../fonts/Poppins-Bold.ttf') format('truetype'); /* Replace with your font file path and format */
+  /* Add additional font variations (font-weight, font-style) if needed */
+}
+@font-face {
+  font-family: 'DM Sans'; /* Choose a name for your custom font */
+  src: url('../fonts/DMSans-VariableFont_opsz\,wght.ttf') format('truetype'); /* Replace with your font file path and format */
+  /* Add additional font variations (font-weight, font-style) if needed */
+}
+* {
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+  font-family: DM Sans;
+  color: #ffffff;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(92,97,140,1) 0%, rgba(76,101,151,1) 6%, rgba(58,89,149,1) 12%, rgba(22,47,94,1) 47%);
+  margin: 0;
+  text-align: center;
+}
+
+
+/*
+Styling Section
+*/
+section{
+  padding: 2rem;
+}
+/*
+Section Styling Ended here
+*/
+
+/*
+Styling the NAVIGATION list
+*/
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px; /* Add some space between the links */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove right margin from the last link */
+}
+
+/* Style the links */
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+#main-header{
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Center horizontally */
+  flex-direction: row;
+  padding: 30px;
+}
+/*
+NAVIGATION Styling ended here
+*/
+
+
+/* Style the logo*/
+#logo img{
+  width: 137px;
+  height: 36.428px;
+}
+/*
+Logo Styling ended here
+*/
+
+
+
+#introduction header{
+  
+  width: 100%;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: left;
+}
+#introduction header span{
+  color: #00D0B0;
+}
+.work{
+  margin: 40px 0px;
+  line-height: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+}
+.heading p{
+  margin: 5px 0 5px 0; /* Shorthand for margin-top and margin-bottom */
+}
+#introduction{
+  justify-content: center;
+}
+.heading p:first-of-type {
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  border-left: 3px solid #00D0B0;
+  padding-left: 10px; 
+}
+
+.heading p:nth-of-type(2) {
+  padding-left: 15px; /* Add the desired padding to the left for the second <p> element */
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: 0.3px;
+}
+
+#for-mobile{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: left;
+}
+#for-pc{
+  display: none;
+}
+
+button{
+  width: 100%;
+  height: 54px;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 150%; 
+  background-color: #00D0B0;
+  border: 0px;
+  color: #ffffff;
+}
+.placeholder-img{
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+#companies-name-container
+{
+  position: relative;
+  padding:30px;
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+}
+
+
+#companies-name {
+  width: calc(100% - 60px);
+    position: absolute;
+    display: block;
+    background-color: #ffffff;
+    z-index: 1;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    top: -0.5rem;
+}
+#companies-name img{
+  margin: 20px auto;
+  height: 25px;
+  display:block;
+  width: auto;
+}
+#companies-name p{
+  color: #979797;
+  font-family: DM Sans;
+  margin: 30px auto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30%; /* 67.5px */
+}
+#services {
+  background-color: #fcfcfc;
+  height: auto;
+  width: 100%;
+  padding-top: 7.5rem;
+  padding-bottom: 200px;
+}
+h2 {
+  font-size: 1rem;
+  text-align: left;
+  color: orange;
+  font-family: Poppins;
+}
+h3{
+  font-family: Poppins;
+  font-size: 1.5rem;
+  color: #0F0B33;
+  text-align: left;
+}
+#services p{
+  font-family: DM Sans;
+  color: #6F6D85;
+  text-align: left;
+}
+#services .card p,#services .card h3{
+  font-size: 1.3rem;
+  text-align: center;
+}
+#service-img{
+  padding-right: 30px;
+  padding-left: 30px;
+  right: 0px;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  z-index: 2
+}
+.card div{
+  padding: 23px;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  background-image: url('../graphics/ORANGE-BG.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card{
+  margin-top: 39px;
+  padding: 70px 20px;
+  border: 1px solid #CFCED6;
+  background-color: #ffffff;
+  border-bottom: 4px solid #00D0B0;
+}
+
+
+#about-us{
+  height: auto;
+  width: 100%;
+  z-index: -2;
+  padding-top: 200px;
+  padding-bottom: 0px;
+}
+
+#about-us h3{
+  color: #ffffff;
+}
+#about-us .work{
+  justify-content: space-between;
+  text-align: left;
+}
+#about-us .heading p:first-of-type {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: 'Poppins';
+}
+#about-us .heading p{
+  color: #ffffff;
+}
+#about-us .work p:nth-of-type(2) {
+  padding-left: 15px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.3px;
+}
+#about-us p{
+  margin-top: 22px;
+  text-align: left;
+  color: #B7B6C2;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: 0.3px;
+}
+#last-p{
+  margin-bottom: 45px;
+}
+#about-us .card {
+  width: 100%;
+  top: 200px;
+  left: 0px;
+  right: 0px;
+  margin-right: 30px;
+  margin-left: 0px;
+  height: auto;
+  position: relative;
+  text-align: center;
+  padding: 46px 11px 32px 12px;
+  border: none;
+}
+#about-us .card h3{
+  text-align: center;
+  color: #0F0B33;
+}
+#about-us .card h2{
+  text-align: center;
+}
+#about-us .card button{
+  border-radius: 30px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #E7E7EB;
+  margin: 0px 0px 20px;
+  color: #0F0B33;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+#about-us .card button:first-of-type{
+  color: #ffffff;
+  background-color: #FF9700;
+}
+#work{
+  position: relative;
+  background-color: #f7f7f7;
+  height: auto;
+  width: 100%;
+  z-index: -3;
+  padding-top: 15rem;
+  margin-bottom: 40px;
+}
+.work-card{
+  line-height: 0;
+}
+.work-card img{
+  padding-right: inherit;
+  padding-left: inherit;
+  width: 100%;
+  height: auto;
+}
+.work-card2 {
+  align-items: center;
+  color: #0F0B33;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fcfcfc;
+  padding: 0px 25px;
+  margin-bottom: 40px;
+}
+.work-card2 img{
+  width: 24px;
+  height: 24px;
+}
+.work-card2 div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.judol{
+  margin: 19px 0px 5px 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.web{
+  color:#878599;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; 
+  margin: 0px 0px 18px 0px;
+}
+.view{
+  margin-right: 12px;
+  color: #00D0B0;
+  text-align: right;
+  /* REGULAR / 12 */
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+#work .card{
+  background-color: #162f5e;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#last-card{
+  justify-content: left;
+  padding: 0px;
+  background-color: #f7f7f7;
+}
+#last-card p{
+  text-align:left;
+}
+#work .card h3,#work .card .heading{
+  color: #fcfcfc;
+}
+#work .card p{
+  font-size: 14px;
+}
+#work .card div{
+  color: #0F0B33;
+  padding: 0px;
+  margin: auto;
+  width: auto;
+  height: auto;
+  background-image:none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card .heading{
+display: flex;
+flex-direction: row;
+}
+#work h3{
+    padding-top: 25px;
+  font-family: Poppins;
+  font-size: 1.5rem;
+}
+.last-p{
+ color: #878599;
+ font-family: DM Sans;
+ font-style: normal;
+ text-align: left;
+}
+#onky-img{
+  height: 48px;
+  width: 48px;
+  margin-right: 11px;
+}
+footer {
+  text-align: left;
+  padding: 0px 30px;
+  height: auto;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to a new line on smaller screens */
+  justify-content: space-between;
+}
+footer p,footer ul{
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  letter-spacing: 0.3px;
+}
+footer ul li{
+  padding: 20px 0px 20px 0px;
+}
+footer .heading p:first-of-type{
+  padding-left: 20px;
+}
+.c-padding{
+  padding: 6px 0px;
+}
+.c-padding img:first-of-type{
+  padding-left: 20px;
+}
+
+#c-padding{
+  font-family: DM Sans;
+}
+#c-padding2{
+  font-family: DM Sans;
+}
+
+
+
+/* Adding Toggle Button */
+
+/* Add this CSS for the toggle button */
+
+
+/* Media query for screens with width less than 768px */
+/* Add this CSS for the toggle button */
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: #fffefe;
+  margin: 10px 0px;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.container.active .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.container.active .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.container.active .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+.hide{
+  display: none;
+}
+#services-view{
+  position:static;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap:2rem;
+}
+/* Media query for screens with width less than 768px */
+@media screen and (max-width: 767px) {
+  
+  nav {
+    flex-direction: column;
+    align-items: center;
+    display: none; /* Hide the navigation links */
+  }
+
+  nav.active {
+    display: block; /* Show the navigation links when the toggle button is clicked */
+  }
+}
+
+.p-width-setter{
+  max-width: 258px;
+}
+
+@media screen and (min-width:768px){
+  #companies-name p {
+    margin: 2.5rem auto;
+    font-size: 2rem;}
+  #review-card{
+    position: relative;
+    right: 50px;
+    width: auto;
+    height: 100%;
+  }
+  #companies-name img{
+    margin: 2rem auto;
+    height: 2rem;
+  }
+  .hide{
+    display: block;
+  }
+  button {
+    max-width: 15rem;
+}
+  .container{
+    display: none;
+  }
+  #for-mobile{
+    display: none;
+  }
+  #for-pc,#introduction header{
+    display: block;
+    max-width: 529px;
+    text-align: left;
+  }
+  #why-genesis {
+    right: 2rem;
+    position: relative;
+    display: block;
+    text-align: left;
+}
+ 
+  
+#companies-name{
+  width: calc(100% - 0px);
+  top: 3rem;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+}
+#companies-name-container {
+  padding-bottom: 0rem;
+}
+#intro-company{
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+}
+.service-h3{
+  width: 350px;
+}
+.services-div {
+  
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#services-div-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+.services-divp{
+  padding-top: 25px;
+}
+services-div .card{
+  max-height: 300px;
+  max-width: 200px;
+}
+#services .card p, #services .card h3 {
+  text-align: center;
+}
+.card{
+  height: 30rem;
+  margin-left: 10px;
+}
+#service-img {
+  width: 22rem;
+  padding-right: 0px;
+  padding-left: 0px;
+  border: 6px solid var(--primarywhite, #FFF);
+  border-radius: 12px;
+  position: relative;
+  left: 7rem;
+  height: auto;
+  margin: 7rem 0rem;
+}
+#we-create-value{
+  width: auto;
+}
+.services-div .services-div{
+  margin-left: 7rem;
+}
+#system-integration{
+  padding: 18px;
+}
+#devOps{
+  padding: 0px;
+}
+#plus{
+  padding: 0px;
+}
+#services-div-card-grid{
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+  grid-template-rows: repeat(2, 1fr); /* Two equal-height rows */
+  grid-gap: 10px;
+}
+#services-div-card-grid .card:last-child{
+  padding: 10rem 0rem;
+}
+.placeholder{
+  background-color: #0F0B33;
+}
+#about-us .services-div{
+  justify-content: space-between;
+}
+#about-us h3{
+  width: 40%;
+}
+#about-us p {
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#about-us{
+  padding-top: 100px;
+  padding-top: 100px;
+  text-align: left;
+  top: 2000px;
+}
+#about-us button{
+  margin: 30px 0px;
+}
+#about-us .card{
+  width: auto;
+}
+#about-us .card h3 {
+  font-size: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  text-align: center;
+}
+.work-card {
+  margin: 0px 5px;
+}
+#services-view{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0fr 0fr;
+}
+
+
+#services-view .card h3{
+  padding-top: 0px;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  width: 60%;
+}
+#services-view .card p,#services-view .card h2{
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+#work {
+  text-align: left;
+}
+
+#work-with-us{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+#img-container{
+  position: relative;
+  left: 2rem;
+  text-align: right;
+}
+#work-title{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#work-image-container{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+#work-image-1{
+  grid-column: span 2;
+}
+.work-card2{
+  margin-bottom: 0px;
+}
+#work-img-holder{
+  padding: 3px;
+}
+#img2-div{
+  min-width: 100px;
+    margin-right: 1px;
+}
+}
+
+@media screen and (min-width:429px) and (max-width:768px){
+  #services{
+    top: 180%;
+  }
+}
+@media screen and (min-width: 1080px)
+{
+  .card{
+    height: 25rem;
+  }
+html {
+    font-size: 130%;
+}
+}
+@media screen and (min-width: 1400px)
+{
+html {
+    font-size: 150%;
+}
+}
